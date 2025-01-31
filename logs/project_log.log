@@ -259,3 +259,360 @@
 2025-01-27 15:40:01.309 | INFO     | __main__:main:177 - END producer.
 2025-01-27 15:40:02.406 | WARNING  | __main__:main:184 - Consumer interrupted by user.
 2025-01-27 15:40:02.411 | INFO     | __main__:main:189 - Kafka consumer for topic 'smoker_csv' closed.
+2025-01-31 12:53:59.618 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 12:53:59.630 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 12:53:59.632 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 12:53:59.632 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:53:59.632 | INFO     | __main__:main:136 - START producer.
+2025-01-31 12:53:59.632 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 12:53:59.641 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 12:53:59.642 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:53:59.967 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 12:53:59.968 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 12:53:59.969 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 12:53:59.969 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:53:59.969 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 12:54:00.077 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 12:54:00.077 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:54:00.394 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 12:54:00.394 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:54:00.736 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 12:54:00.737 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 12:54:00.737 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 12:54:00.738 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:54:00.738 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:54:00.739 | ERROR    | __main__:generate_messages:115 - Invalid JSON format in file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json. Error: Expecting value: line 1 column 1 (char 0)
+2025-01-31 12:54:00.740 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 12:57:32.181 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 12:57:32.185 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 12:57:32.185 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 12:57:32.186 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:57:32.186 | INFO     | __main__:main:136 - START producer.
+2025-01-31 12:57:32.186 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 12:57:32.195 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 12:57:32.196 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:57:32.517 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 12:57:32.518 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 12:57:32.518 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 12:57:32.518 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:57:32.518 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 12:57:32.626 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 12:57:32.626 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:57:32.943 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 12:57:32.943 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:57:33.271 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 12:57:33.272 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 12:57:33.272 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 12:57:33.272 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:57:33.274 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:57:33.274 | ERROR    | __main__:generate_messages:115 - Invalid JSON format in file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json. Error: Expecting value: line 1 column 1 (char 0)
+2025-01-31 12:57:33.275 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 12:58:34.458 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 12:58:34.460 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 12:58:34.460 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 12:58:34.461 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:58:34.461 | INFO     | __main__:main:136 - START producer.
+2025-01-31 12:58:34.461 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 12:58:34.468 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 12:58:34.468 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:58:34.784 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 12:58:34.785 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 12:58:34.786 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 12:58:34.786 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:58:34.786 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 12:58:34.895 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 12:58:34.895 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:58:35.210 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 12:58:35.210 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 12:58:35.528 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 12:58:35.529 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 12:58:35.530 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 12:58:35.530 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:58:35.543 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 12:58:35.544 | ERROR    | __main__:generate_messages:115 - Invalid JSON format in file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json. Error: Expecting value: line 1 column 1 (char 0)
+2025-01-31 12:58:35.545 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 13:03:36.731 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 13:03:36.734 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 13:03:36.735 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 13:03:36.735 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 13:03:36.735 | INFO     | __main__:main:136 - START producer.
+2025-01-31 13:03:36.735 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 13:03:36.760 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 13:03:36.760 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:03:37.078 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 13:03:37.079 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 13:03:37.079 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 13:03:37.080 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:03:37.080 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 13:03:37.187 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 13:03:37.188 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:03:37.504 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 13:03:37.504 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:03:37.823 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 13:03:37.824 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 13:03:37.824 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 13:03:37.826 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 13:03:37.839 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json
+2025-01-31 13:03:37.840 | ERROR    | __main__:generate_messages:115 - Invalid JSON format in file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz_krabbe.json. Error: Expecting value: line 1 column 1 (char 0)
+2025-01-31 13:03:37.842 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 13:12:31.182 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 13:12:31.186 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 13:12:31.186 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 13:12:31.186 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:12:31.186 | INFO     | __main__:main:136 - START producer.
+2025-01-31 13:12:31.187 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 13:12:31.193 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 13:12:31.194 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:12:31.511 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 13:12:31.512 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 13:12:31.512 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 13:12:31.513 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:12:31.513 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 13:12:31.618 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 13:12:31.619 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:12:31.934 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 13:12:31.935 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:12:32.254 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 13:12:32.255 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 13:12:32.256 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 13:12:32.256 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:12:32.266 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:12:32.268 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-31 13:12:33.270 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-31 13:12:34.271 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-31 13:12:35.273 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-31 13:12:36.276 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-31 13:12:37.277 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-31 13:12:38.280 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-31 13:12:39.283 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-31 13:12:40.284 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-31 13:12:41.287 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-31 13:12:42.289 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-31 13:12:43.292 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-31 13:12:44.292 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-31 13:12:45.295 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-31 13:12:46.297 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-31 13:12:47.299 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-31 13:12:48.301 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-31 13:12:49.303 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-31 13:12:50.305 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-31 13:12:51.306 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-31 13:12:52.308 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-31 13:12:53.311 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-31 13:12:53.976 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-01-31 13:12:53.977 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 13:12:53.978 | INFO     | __main__:main:180 - END producer.
+2025-01-31 13:13:30.378 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 13:13:30.382 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 13:13:30.382 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 13:13:30.382 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:13:30.383 | INFO     | __main__:main:136 - START producer.
+2025-01-31 13:13:30.383 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 13:13:30.389 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 13:13:30.390 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:13:30.703 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 13:13:30.704 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 13:13:30.704 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 13:13:30.704 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:13:30.706 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 13:13:30.812 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 13:13:30.812 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:13:31.126 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 13:13:31.127 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:13:31.443 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 13:13:31.443 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 13:13:31.445 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 13:13:31.445 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:13:31.454 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:13:31.457 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Manchester Unitedâ€™s comeback wins never get old.', 'author': 'Alex'}
+2025-01-31 13:13:32.459 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'VAR decisions always stir up controversy.', 'author': 'Jamie'}
+2025-01-31 13:13:33.461 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Liverpoolâ€™s pressing game is unreal!', 'author': 'Sam'}
+2025-01-31 13:13:34.463 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hat-tricks are a strikerâ€™s dream.', 'author': 'Jordan'}
+2025-01-31 13:13:35.465 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Can anyone stop Erling Haaland this season?', 'author': 'Chris'}
+2025-01-31 13:13:36.468 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Chelseaâ€™s squad rebuild is fascinating to watch.', 'author': 'Taylor'}
+2025-01-31 13:13:37.470 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Arsenalâ€™s young stars are lighting up the league.', 'author': 'Morgan'}
+2025-01-31 13:13:38.472 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Penalty shootouts are the ultimate test of nerves.', 'author': 'Drew'}
+2025-01-31 13:13:39.475 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The atmosphere at Anfield is unmatched.', 'author': 'Charlie'}
+2025-01-31 13:13:40.477 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Tottenhamâ€™s attacking play is a joy to watch.', 'author': 'Blake'}
+2025-01-31 13:13:40.529 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-01-31 13:13:40.530 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 13:13:40.530 | INFO     | __main__:main:180 - END producer.
+2025-01-31 13:15:04.162 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 13:15:04.165 | INFO     | __main__:<module>:68 - Project root: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe
+2025-01-31 13:15:04.165 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data
+2025-01-31 13:15:04.166 | INFO     | __main__:<module>:76 - Data file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:15:04.166 | INFO     | __main__:main:136 - START producer.
+2025-01-31 13:15:04.166 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-31 13:15:04.173 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-31 13:15:04.174 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:15:04.489 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'IwjRkHOfS--7GecCUrZpKQ', 'controller_id': 0}
+2025-01-31 13:15:04.489 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-31 13:15:04.490 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-31 13:15:04.490 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:15:04.490 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-31 13:15:04.597 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-31 13:15:04.597 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:15:04.911 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-31 13:15:04.911 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:15:05.227 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-31 13:15:05.228 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-31 13:15:05.228 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-31 13:15:05.230 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:15:05.230 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Ryan Krabbe\Documents\Streaming_Data\buzzline-03-krabbe\data\buzz.json
+2025-01-31 13:15:05.232 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Manchester Unitedâ€™s comeback wins never get old.', 'author': 'Alex'}
+2025-01-31 13:15:06.233 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'VAR decisions always stir up controversy.', 'author': 'Jamie'}
+2025-01-31 13:15:07.109 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-31 13:15:07.112 | INFO     | __main__:main:142 - START consumer.
+2025-01-31 13:15:07.112 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-01-31 13:15:07.113 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-01-31 13:15:07.113 | INFO     | __main__:main:147 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-01-31 13:15:07.113 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-31 13:15:07.113 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-01-31 13:15:07.223 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-31 13:15:07.223 | INFO     | __main__:main:153 - Polling messages from topic 'buzzline_json'...
+2025-01-31 13:15:07.235 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Liverpoolâ€™s pressing game is unreal!', 'author': 'Sam'}
+2025-01-31 13:15:07.356 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-31 13:15:07.356 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.356 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1}
+2025-01-31 13:15:07.358 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-31 13:15:07.358 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.358 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 1}
+2025-01-31 13:15:07.359 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-31 13:15:07.359 | INFO     | __main__:process_message:108 - Message received from author: Charlie
+2025-01-31 13:15:07.359 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 1, 'Charlie': 1}
+2025-01-31 13:15:07.360 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-31 13:15:07.360 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.361 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1}
+2025-01-31 13:15:07.361 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-31 13:15:07.361 | INFO     | __main__:process_message:108 - Message received from author: Diana
+2025-01-31 13:15:07.362 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-01-31 13:15:07.362 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-31 13:15:07.363 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.363 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-01-31 13:15:07.364 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-31 13:15:07.364 | INFO     | __main__:process_message:108 - Message received from author: Diana
+2025-01-31 13:15:07.364 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-31 13:15:07.365 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-31 13:15:07.365 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.365 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 2, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-31 13:15:07.366 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-31 13:15:07.366 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.366 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-31 13:15:07.367 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-31 13:15:07.367 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.368 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 2}
+2025-01-31 13:15:07.368 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-31 13:15:07.368 | INFO     | __main__:process_message:108 - Message received from author: Diana
+2025-01-31 13:15:07.368 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 3}
+2025-01-31 13:15:07.369 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-31 13:15:07.369 | INFO     | __main__:process_message:108 - Message received from author: Diana
+2025-01-31 13:15:07.370 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 4}
+2025-01-31 13:15:07.370 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-31 13:15:07.370 | INFO     | __main__:process_message:108 - Message received from author: Charlie
+2025-01-31 13:15:07.371 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4}
+2025-01-31 13:15:07.371 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-31 13:15:07.372 | INFO     | __main__:process_message:108 - Message received from author: Bob
+2025-01-31 13:15:07.372 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 1}
+2025-01-31 13:15:07.372 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-31 13:15:07.373 | INFO     | __main__:process_message:108 - Message received from author: Bob
+2025-01-31 13:15:07.373 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-31 13:15:07.373 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-31 13:15:07.374 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.374 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 4, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-31 13:15:07.374 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-31 13:15:07.374 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.375 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 5, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-31 13:15:07.375 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-31 13:15:07.375 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.376 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 5, 'Alice': 5, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-31 13:15:07.376 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-31 13:15:07.377 | INFO     | __main__:process_message:108 - Message received from author: Alice
+2025-01-31 13:15:07.377 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-31 13:15:07.377 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-31 13:15:07.378 | INFO     | __main__:process_message:108 - Message received from author: Diana
+2025-01-31 13:15:07.378 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-31 13:15:07.378 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-31 13:15:07.379 | INFO     | __main__:process_message:108 - Message received from author: Eve
+2025-01-31 13:15:07.379 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-31 13:15:07.380 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-31 13:15:07.380 | INFO     | __main__:process_message:108 - Message received from author: Charlie
+2025-01-31 13:15:07.380 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2}
+2025-01-31 13:15:07.381 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Manchester Unitedâ€™s comeback wins never get old.', 'author': 'Alex'}
+2025-01-31 13:15:07.381 | INFO     | __main__:process_message:108 - Message received from author: Alex
+2025-01-31 13:15:07.382 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1}
+2025-01-31 13:15:07.382 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'VAR decisions always stir up controversy.', 'author': 'Jamie'}
+2025-01-31 13:15:07.382 | INFO     | __main__:process_message:108 - Message received from author: Jamie
+2025-01-31 13:15:07.383 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1}
+2025-01-31 13:15:07.383 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Liverpoolâ€™s pressing game is unreal!', 'author': 'Sam'}
+2025-01-31 13:15:07.383 | INFO     | __main__:process_message:108 - Message received from author: Sam
+2025-01-31 13:15:07.384 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1}
+2025-01-31 13:15:07.384 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Hat-tricks are a strikerâ€™s dream.', 'author': 'Jordan'}
+2025-01-31 13:15:07.385 | INFO     | __main__:process_message:108 - Message received from author: Jordan
+2025-01-31 13:15:07.385 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1}
+2025-01-31 13:15:07.385 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Can anyone stop Erling Haaland this season?', 'author': 'Chris'}
+2025-01-31 13:15:07.386 | INFO     | __main__:process_message:108 - Message received from author: Chris
+2025-01-31 13:15:07.386 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1}
+2025-01-31 13:15:07.387 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Chelseaâ€™s squad rebuild is fascinating to watch.', 'author': 'Taylor'}
+2025-01-31 13:15:07.387 | INFO     | __main__:process_message:108 - Message received from author: Taylor
+2025-01-31 13:15:07.387 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1}
+2025-01-31 13:15:07.388 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Arsenalâ€™s young stars are lighting up the league.', 'author': 'Morgan'}
+2025-01-31 13:15:07.388 | INFO     | __main__:process_message:108 - Message received from author: Morgan
+2025-01-31 13:15:07.388 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1}
+2025-01-31 13:15:07.389 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Penalty shootouts are the ultimate test of nerves.', 'author': 'Drew'}
+2025-01-31 13:15:07.389 | INFO     | __main__:process_message:108 - Message received from author: Drew
+2025-01-31 13:15:07.390 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1}
+2025-01-31 13:15:07.390 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'The atmosphere at Anfield is unmatched.', 'author': 'Charlie'}
+2025-01-31 13:15:07.390 | INFO     | __main__:process_message:108 - Message received from author: Charlie
+2025-01-31 13:15:07.391 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1}
+2025-01-31 13:15:07.391 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Tottenhamâ€™s attacking play is a joy to watch.', 'author': 'Blake'}
+2025-01-31 13:15:07.391 | INFO     | __main__:process_message:108 - Message received from author: Blake
+2025-01-31 13:15:07.392 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 1, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:07.392 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Manchester Unitedâ€™s comeback wins never get old.', 'author': 'Alex'}
+2025-01-31 13:15:07.393 | INFO     | __main__:process_message:108 - Message received from author: Alex
+2025-01-31 13:15:07.393 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 1, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:07.393 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'VAR decisions always stir up controversy.', 'author': 'Jamie'}
+2025-01-31 13:15:07.394 | INFO     | __main__:process_message:108 - Message received from author: Jamie
+2025-01-31 13:15:07.394 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 1, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:07.394 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Liverpoolâ€™s pressing game is unreal!', 'author': 'Sam'}
+2025-01-31 13:15:07.395 | INFO     | __main__:process_message:108 - Message received from author: Sam
+2025-01-31 13:15:07.395 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 1, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:08.237 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hat-tricks are a strikerâ€™s dream.', 'author': 'Jordan'}
+2025-01-31 13:15:08.240 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Hat-tricks are a strikerâ€™s dream.', 'author': 'Jordan'}
+2025-01-31 13:15:08.241 | INFO     | __main__:process_message:108 - Message received from author: Jordan
+2025-01-31 13:15:08.241 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 1, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:09.239 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Can anyone stop Erling Haaland this season?', 'author': 'Chris'}
+2025-01-31 13:15:09.242 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Can anyone stop Erling Haaland this season?', 'author': 'Chris'}
+2025-01-31 13:15:09.243 | INFO     | __main__:process_message:108 - Message received from author: Chris
+2025-01-31 13:15:09.243 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 1, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:10.240 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Chelseaâ€™s squad rebuild is fascinating to watch.', 'author': 'Taylor'}
+2025-01-31 13:15:10.244 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Chelseaâ€™s squad rebuild is fascinating to watch.', 'author': 'Taylor'}
+2025-01-31 13:15:10.244 | INFO     | __main__:process_message:108 - Message received from author: Taylor
+2025-01-31 13:15:10.244 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 1, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:11.242 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Arsenalâ€™s young stars are lighting up the league.', 'author': 'Morgan'}
+2025-01-31 13:15:11.245 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Arsenalâ€™s young stars are lighting up the league.', 'author': 'Morgan'}
+2025-01-31 13:15:11.245 | INFO     | __main__:process_message:108 - Message received from author: Morgan
+2025-01-31 13:15:11.247 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 2, 'Drew': 1, 'Blake': 1}
+2025-01-31 13:15:12.244 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Penalty shootouts are the ultimate test of nerves.', 'author': 'Drew'}
+2025-01-31 13:15:12.249 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Penalty shootouts are the ultimate test of nerves.', 'author': 'Drew'}
+2025-01-31 13:15:12.249 | INFO     | __main__:process_message:108 - Message received from author: Drew
+2025-01-31 13:15:12.249 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 4, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 2, 'Drew': 2, 'Blake': 1}
+2025-01-31 13:15:13.245 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The atmosphere at Anfield is unmatched.', 'author': 'Charlie'}
+2025-01-31 13:15:13.249 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'The atmosphere at Anfield is unmatched.', 'author': 'Charlie'}
+2025-01-31 13:15:13.249 | INFO     | __main__:process_message:108 - Message received from author: Charlie
+2025-01-31 13:15:13.250 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 5, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 2, 'Drew': 2, 'Blake': 1}
+2025-01-31 13:15:14.248 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Tottenhamâ€™s attacking play is a joy to watch.', 'author': 'Blake'}
+2025-01-31 13:15:14.250 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'Tottenhamâ€™s attacking play is a joy to watch.', 'author': 'Blake'}
+2025-01-31 13:15:14.250 | INFO     | __main__:process_message:108 - Message received from author: Blake
+2025-01-31 13:15:14.251 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 5, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 2, 'Drew': 2, 'Blake': 2}
+2025-01-31 13:15:15.248 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'The North London Derby never disappoints.', 'author': 'Riley'}
+2025-01-31 13:15:15.252 | INFO     | __main__:process_message:101 - Processed JSON message: {'message': 'The North London Derby never disappoints.', 'author': 'Riley'}
+2025-01-31 13:15:15.253 | INFO     | __main__:process_message:108 - Message received from author: Riley
+2025-01-31 13:15:15.253 | INFO     | __main__:process_message:114 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 5, 'Diana': 5, 'Bob': 2, 'Alex': 2, 'Jamie': 2, 'Sam': 2, 'Jordan': 2, 'Chris': 2, 'Taylor': 2, 'Morgan': 2, 'Drew': 2, 'Blake': 2, 'Riley': 1}
+2025-01-31 13:15:16.251 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Can Aston Villa push for a top-four finish?', 'author': 'Jordan'}
+2025-01-31 13:15:16.253 | WARNING  | __main__:main:160 - Consumer interrupted by user.
+2025-01-31 13:15:16.267 | INFO     | __main__:main:165 - Kafka consumer for topic 'buzzline_json' closed.
+2025-01-31 13:15:16.268 | INFO     | __main__:main:167 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-01-31 13:15:17.253 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Defensive masterclasses are just as exciting as goal fests.', 'author': 'Alex'}
+2025-01-31 13:15:17.520 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-01-31 13:15:17.520 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-01-31 13:15:17.521 | INFO     | __main__:main:180 - END producer.
