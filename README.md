@@ -1,4 +1,9 @@
-# buzzline-03-case
+# buzzline-03-krabbe
+
+# English Premier League and Smoker Status csv/json Project
+
+In this project, I created an English Premier League  custom json file and fed that into my json_producer and consumer file.
+I also added a "status" column to my custom csv file and fed that info into my csv_producer and consumer file.
 
 Streaming data does not have to be simple text.
 Many of us are familiar with streaming video content and audio (e.g. music) files. 
